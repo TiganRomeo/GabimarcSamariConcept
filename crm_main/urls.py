@@ -4,7 +4,7 @@ from excavator import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
+    path('', views.home, name='home'),
     path('about/', views.about, name='about'),
     path('excavators/', views.excavators, name='excavators'),
     path('prices/', views.prices, name='prices'),
