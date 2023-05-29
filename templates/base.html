@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Excavator Website{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+    <header>
+        <!-- Add your header content here -->
+    {% block header %}
+        <h1>Excavator Website</h1>
+        <!-- Add any common header elements -->
+    {% endblock %}
+    </header>
+
+    <main>
+    {% block content %}
+        <!-- Content for specific pages will go here -->
+    {% endblock %}
+    </main>
+
+    <footer>
+    <!-- Add your footer content here -->
+    {% block footer %}
+        <p>&copy; 2023 Excavator Website. All rights reserved.</p>
+        <!-- Add any common footer elements -->
+    {% endblock %}
+    </footer>
+</body>
+
+</html>
